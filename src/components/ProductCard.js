@@ -67,7 +67,7 @@ const ProductCard = ({img,title,desc,rating,price}) => {
     <div className='fixed-size-div px-4 border border-gray-200 rounded-xl max-w-[300px]'>
         <div>
             <Image 
-             className='width-418 height-618'
+             className='w-full h-auto'
             src={img} width={200} height={300} alt={title} />
             <div className='space-y-2 py-2'>
                 <h2 className='text-accent '>{title}</h2>
