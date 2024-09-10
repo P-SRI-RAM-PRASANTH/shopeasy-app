@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body{
+    overflow-x: hidden;
+  }
+}
+@layer components {
+  .header_top__icon_wrapper {
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    border-radius: 0.375rem;   /* Equivalent to rounded-md */
+    padding: 6px;              /* Equivalent to p-[6px] */
+    font-size: 12px;           /* Equivalent to text-[12px] */
+    cursor: pointer;           /* Equivalent to cursor-pointer */
+}
+  .header_top__icon_wrapper:hover {
+    background-color: #ACCE; 
+    text-emphasis-color:"white";  /* Equivalent to hover:bg-ace */
+  }
+  .navbar__link:hover{
+    color:#ff8f9c;
+    transition: all 0.4s;
+  }
+  .navbar__link::after{
+    position: absolute;
+    content:"";
+    background-color:#ff8f9c;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left:0;
+    scale: 0;
+    transform-origin: left;
+    transition: all 0.4s;
+  }
+  .navbar__link:hover::after{
+    scale: 1;
+  }
+
+}
+.slide {
+  position: relative;
+  height: 400px; /* Adjust based on your design */
+}
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
